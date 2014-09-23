@@ -1,4 +1,5 @@
 FROM dockerfile/nodejs-bower-grunt
+RUN apt-get -y update
 RUN apt-get -y install ruby ruby-dev make
 RUN gem install compass
 
